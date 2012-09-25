@@ -1,6 +1,6 @@
 package org.danac78.stripmath;
 
-import org.danac78.stripmath.support.MathArraySimple;
+import org.danac78.stripmath.support.MathSimpleObj;
 import org.danac78.stripmath.support.MathEngine;
 
 import android.app.Activity;
@@ -20,7 +20,7 @@ public class MathActivity extends Activity {
 	private Button multiply;
 	private Button divide;
 	protected int difficulty = 1;
-	private MathArraySimple problem;
+	private MathSimpleObj problem;
 	private Button answerBtn;
 	private EditText answerBox;
 

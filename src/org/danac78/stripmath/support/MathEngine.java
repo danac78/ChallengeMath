@@ -5,15 +5,15 @@ import java.util.Random;
 public class MathEngine {
 
 	private Random random = new Random();;
-	private MathArraySimple mathObjSimple;
+	private MathSimpleObj mathObjSimple;
 
 	public MathEngine() {
 
 	}
 
-	public MathArraySimple getMathObj(int difficulty, int problemType) {
+	public MathSimpleObj getMathObj(int difficulty, int problemType) {
 
-		mathObjSimple = new MathArraySimple();
+		mathObjSimple = new MathSimpleObj();
 
 		mathObjSimple.setA(random.nextInt(difficulty));
 		mathObjSimple.setB(random.nextInt(difficulty));

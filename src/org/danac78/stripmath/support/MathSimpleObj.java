@@ -1,6 +1,6 @@
 package org.danac78.stripmath.support;
 
-public class MathArraySimple {
+public class MathSimpleObj {
 	private int A;
 	private int B;
 	private int answer;
