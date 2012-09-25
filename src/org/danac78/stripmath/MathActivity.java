@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 public class MathActivity extends Activity {
 
-	
 	private MathEngine math;
 	private TextView problemTxt;
 	private Button plus;
@@ -37,8 +36,8 @@ public class MathActivity extends Activity {
 		problemTxt = (TextView) findViewById(R.id.problemTxt);
 		answerBtn = (Button) findViewById(R.id.answerBtn);
 		answerBox = (EditText) findViewById(R.id.answer);
-				
-		math = new MathEngine();		
+
+		math = new MathEngine();
 
 		plus.setOnClickListener(new View.OnClickListener() {
 
@@ -73,29 +72,34 @@ public class MathActivity extends Activity {
 				setProblem(2);
 			}
 		});
-		
+
 		answerBtn.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-				
+
 				String answer = answerBox.getText().toString();
-				
-				if(answer.equals(problem.getAnswer()))
-				{
+
+				if (answer.equals(problem.getAnswer())) {
 					problemTxt.setText("Correct");
-				} else 
-				{
+					difficulty += 1;
+				} else {
 					problemTxt.setText("Incorrect");
+					if (difficulty > 1) {
+						difficulty -= 1;
+					}
 				}
-				
+
 			}
 		});
 
 	}
-
+/**
+ * Setting up the problem and displaying it on the screen.
+ * @param i Declaring what type of problem it is.
+ */
 	protected void setProblem(int i) {
-		problem = math.getMathObj(difficulty, i);		
+		problem = math.getMathObj(difficulty, i);
 		problemTxt.setText(problem.toString());
 
 	}
