@@ -13,5 +13,10 @@
     <string name="multiply">*</string>
     <string name="divide">/</string>
     <string name="answerBtn">Answer</string>
+    <string name="easy">Very Easy</string>
+    <string name="easyBreezy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="veryhard">Very Hard</string>
 
 </resources>
