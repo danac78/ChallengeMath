@@ -1,4 +1,4 @@
-package org.danac78.stripmath.support;
+package org.danac78.challengemath.support;
 
 import java.util.Random;
 

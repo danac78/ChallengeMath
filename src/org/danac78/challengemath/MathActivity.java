@@ -1,7 +1,8 @@
-package org.danac78.stripmath;
+package org.danac78.challengemath;
 
-import org.danac78.stripmath.support.MathSimpleObj;
-import org.danac78.stripmath.support.MathEngine;
+import org.danac78.challengemath.R;
+import org.danac78.challengemath.support.MathEngine;
+import org.danac78.challengemath.support.MathSimpleObj;
 
 import android.app.Activity;
 import android.os.Bundle;
