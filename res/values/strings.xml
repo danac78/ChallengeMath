@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">StripMath</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="addition">Addition</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_launch">Launch</string>
+    <string name="title_activity_math">Math</string>
+    <string name="standAnswer">No</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="answerBtn">Answer</string>
+
+</resources>

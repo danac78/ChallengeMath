@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/problemField"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/problemTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="181dp"
+        android:text="@string/standAnswer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/answer"
+        android:layout_marginTop="36dp"
+        android:text="@string/plus" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plus"
+        android:layout_alignBottom="@+id/plus"
+        android:layout_toRightOf="@+id/plus"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/minus"
+        android:layout_alignBottom="@+id/minus"
+        android:layout_toRightOf="@+id/answer"
+        android:text="@string/divide" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/divide"
+        android:layout_alignBottom="@+id/divide"
+        android:layout_alignRight="@+id/answer"
+        android:text="@string/multiply" />
+
+    <Button
+        android:id="@+id/answerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/multiply"
+        android:layout_below="@+id/minus"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/answerBtn" />
+
+</RelativeLayout>
