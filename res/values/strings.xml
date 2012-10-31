@@ -7,7 +7,7 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_launch">Launch</string>
     <string name="title_activity_math">Math</string>
-    <string name="standAnswer">No</string>
+    <string name="standAnswer"></string>
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="multiply">*</string>
