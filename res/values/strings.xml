@@ -18,5 +18,6 @@
     <string name="medium">Medium</string>
     <string name="hard">Hard</string>
     <string name="veryhard">Very Hard</string>
+    <string name="title_activity_menu">Menu</string>
 
 </resources>
