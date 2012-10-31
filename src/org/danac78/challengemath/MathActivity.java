@@ -13,10 +13,13 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
-
+/** Math Activity
+ * 
+ * @author dana haywood
+ *
+ */
 public class MathActivity extends Activity {
 
 	private static final String GET_PREF = "settings";
@@ -54,8 +57,7 @@ public class MathActivity extends Activity {
 		tutorView = (VideoView) findViewById(R.id.tutorVideo);
 		settings = getSharedPreferences(GET_PREF, 0);
 		videoPerson = settings.getString("person", null);
-		uri = "android.resource://" + getPackageName() + "/raw/";
-		new MediaController(this);
+		uri = "android.resource://" + getPackageName() + "/raw/";	
 		math = new MathEngine();
 				
 		finalURI = Uri.parse(setURI(uri,videoPerson,video));  
