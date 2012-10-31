@@ -15,8 +15,8 @@ public class MathEngine {
 
 		mathObjSimple = new MathSimpleObj();
 
-		mathObjSimple.setA(random.nextInt(difficulty));
-		mathObjSimple.setB(random.nextInt(difficulty));
+		mathObjSimple.setA(random.nextInt(difficulty*10));
+		mathObjSimple.setB(random.nextInt(difficulty*10));
 		switch (problemType) {
 		case 1:
 			mathObjSimple
